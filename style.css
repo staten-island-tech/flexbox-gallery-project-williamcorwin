@@ -15,25 +15,8 @@
 
 }
 
-.dog {
-  position: absolute;
-  animation: run 5s;
-  animation-iteration-count: infinite;
-  image-size: 10%;
-}
-
-@keyframes run {
-  from {
-    transform: translateX(-2000px);
-    transform: rotate(0deg);
-  }
-  to {
-    transform: translateX(2000px);
-    transform: rotate(360deg);
-  }
-}
-
 #posts {
+    transition: transform .2s;
     transform: rotateX(0deg);
     color: white;
     background-color: #EDB693;
@@ -80,14 +63,11 @@
 
     box-shadow: 5px 10px 8px #888888;
     margin: 20px;
-    max-width: 425px;
     min-width: 350px;
-    max-height: 28%;
     min-height: 250px;
-    transition: transform .2s;
   }
 
-  .column:hover {
+#posts:hover {
     transform: scale(1.1);
   }
   
@@ -104,3 +84,26 @@
   .column img:hover {
     transform: scale(1.05);
   }
+
+  @media screen and (max-width: 2000px) {
+    #posts{
+      max-width: 30%;
+
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    #posts{
+      max-width: 45%;
+
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    #posts{
+      max-width: 90%;
+
+    }
+  }
+
+  
