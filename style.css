@@ -15,9 +15,6 @@
 
 }
 
-.background {
-  background-color: wheat
-}
 
 #posts {
     transition: transform .2s;
@@ -64,6 +61,7 @@
 
     box-shadow: 5px 10px 8px #888888;
     margin: 1%;
+    padding-bottom: 20px;
   }
 
 #posts:hover {
