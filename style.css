@@ -15,6 +15,9 @@
 
 }
 
+.back {
+  background-color:bisque;
+}
 
 #posts {
     transition: transform .2s;
