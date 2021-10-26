@@ -1,8 +1,14 @@
+html,
+body,
+* {
+  font-size: 62.5%;
+}
+
 .main-header {
     margin: 10%;
     padding: 5%;
     background-color: #EDB693;
-    font-size: 200%;
+    font-size: 3rem;
     text-align: center;
     transition: transform .2s;
 
@@ -35,7 +41,6 @@
 }
 
 .all {
-  background-color: antiquewhite;  
   margin: 10%;
   font-family: 'Architects Daughter', cursive;
 }
@@ -61,7 +66,7 @@
     align-content: center;
     text-align: center;
     padding-top: 1%;
-    font-size: 200%;
+    font-size: 4rem;
 
     animation: unfold 1s;
   }
@@ -72,14 +77,14 @@
   
 
   
-  .column img {
+  .imageclass {
     transition: transform .2s;
-    padding: 20px;
+    padding: 1rem;
     width: 85%;
     min-height: 75%;
   }
 
-  .column img:hover {
+  .imageclass:hover {
     transform: rotate(0.01turn);
   }
 
